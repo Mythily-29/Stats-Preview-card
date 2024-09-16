@@ -1,0 +1,128 @@
+
+body{
+    background-color: rgb(9, 8, 24);
+    width: fit-content;
+    font-size: 18px;
+    border: 4px solid pink;
+}
+.full-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+    min-width: 1074px;
+  
+}
+.whole-content{
+    width: 75%;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    word-spacing: 5px;
+    overflow: hidden;
+    display: flex;
+    margin-top:100px;
+}
+.parent-div{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-family: "Lexend Deca", sans-serif;
+    color:  hsla(0, 0%, 100%, 0.75);
+}
+.first-content{
+    color: white;
+    width: 90%;
+    font-family: "Inter", sans-serif;
+}
+
+.second-content{
+
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+.second-content down-first{
+    font-family: "Inter", sans-serif;
+}
+.second-content h1{
+    margin: 5px 0px;
+}
+.second-content p{
+    margin: 5px 0px;
+}
+.side-image{
+    
+    background-size:contain;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.right{
+    width: 100%;
+    height: 100%;
+}
+.left{
+    display: none;
+}
+.side-image::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(156, 64, 218);
+    opacity: 0.5;
+}
+@media(max-width:500px){
+    .parent-div{
+        padding: 0px;
+    }
+    .full-container{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+      
+        min-width: 300px;
+    }
+   .whole-content{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin: 40px 0 40px 0;
+}
+.first-content{
+    text-align: center;
+}
+.right{
+    display: none;
+}
+.left{
+    width: 100%;
+    display: ruby;
+}
+.second-content{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 20px;
+}
+.second-content h1{
+    margin: 5px 0px;
+}
+.second-content p{
+    margin: 5px 0px;
+}
+}
